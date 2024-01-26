@@ -1,0 +1,9 @@
+{% extends 'my_app/base.html' %}
+{% load i18n %}
+
+{% block main_content %}
+    <div class="text-center">
+        {# Translators: Main page title #}
+        <h1>{% translate 'Welcome to the Main Page' %}</h1>
+    </div>
+{% endblock %}
