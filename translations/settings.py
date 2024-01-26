@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-13&&p7q6rlxn*aj-l1xccin+nrfa1pmqz=5q1m0=!q3n(^+rcs
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -113,6 +113,7 @@ LANGUAGE_CODE = 'en-us'
 LANGUAGES = [
     ("en", _("English")),
     ('uk', _('Ukrainian')),
+    ('es', _('Spanish')),
 ]
 
 LOCALE_PATHS = [
