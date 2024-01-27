@@ -2,7 +2,7 @@
 <ul>
     {% for item in menu_items %}
     <li>
-        <a href="{% url 'menu_item' item.pk %}">{% translate item.name %}</a>
+        <a href="{% url 'menu_item' item.pk %}">{{ item.name }}</a>
 
         {% if item.child_items.all %}
             {% include 'my_app/includes/menu_items.html' with menu_items=item.child_items.all %}
